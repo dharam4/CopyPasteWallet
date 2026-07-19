@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		CEEF0664300CDB4900CB21A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEF064C300CDB4700CB21A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEF0653300CDB4700CB21A8;
+			remoteInfo = CopyPasteWallet;
+		};
+		CEEF066E300CDB4900CB21A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEF064C300CDB4700CB21A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEF0653300CDB4700CB21A8;
+			remoteInfo = CopyPasteWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEEF0654300CDB4700CB21A8 /* CopyPasteWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopyPasteWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEF0663300CDB4900CB21A8 /* CopyPasteWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyPasteWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEF066D300CDB4900CB21A8 /* CopyPasteWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyPasteWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CEEF0656300CDB4700CB21A8 /* CopyPasteWallet */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CopyPasteWallet;
+			sourceTree = "<group>";
+		};
+		CEEF0666300CDB4900CB21A8 /* CopyPasteWalletTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CopyPasteWalletTests;
+			sourceTree = "<group>";
+		};
+		CEEF0670300CDB4900CB21A8 /* CopyPasteWalletUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CopyPasteWalletUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEF0651300CDB4700CB21A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF0660300CDB4900CB21A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF066A300CDB4900CB21A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEEF064B300CDB4700CB21A8 = {
+			isa = PBXGroup;
+			children = (
+				CEEF0656300CDB4700CB21A8 /* CopyPasteWallet */,
+				CEEF0666300CDB4900CB21A8 /* CopyPasteWalletTests */,
+				CEEF0670300CDB4900CB21A8 /* CopyPasteWalletUITests */,
+				CEEF0655300CDB4700CB21A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEF0655300CDB4700CB21A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF0654300CDB4700CB21A8 /* CopyPasteWallet.app */,
+				CEEF0663300CDB4900CB21A8 /* CopyPasteWalletTests.xctest */,
+				CEEF066D300CDB4900CB21A8 /* CopyPasteWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEF0653300CDB4700CB21A8 /* CopyPasteWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEF0677300CDB4900CB21A8 /* Build configuration list for PBXNativeTarget "CopyPasteWallet" */;
+			buildPhases = (
+				CEEF0650300CDB4700CB21A8 /* Sources */,
+				CEEF0651300CDB4700CB21A8 /* Frameworks */,
+				CEEF0652300CDB4700CB21A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CEEF0656300CDB4700CB21A8 /* CopyPasteWallet */,
+			);
+			name = CopyPasteWallet;
+			packageProductDependencies = (
+			);
+			productName = CopyPasteWallet;
+			productReference = CEEF0654300CDB4700CB21A8 /* CopyPasteWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEEF0662300CDB4900CB21A8 /* CopyPasteWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEF067A300CDB4900CB21A8 /* Build configuration list for PBXNativeTarget "CopyPasteWalletTests" */;
+			buildPhases = (
+				CEEF065F300CDB4900CB21A8 /* Sources */,
+				CEEF0660300CDB4900CB21A8 /* Frameworks */,
+				CEEF0661300CDB4900CB21A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEF0665300CDB4900CB21A8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CEEF0666300CDB4900CB21A8 /* CopyPasteWalletTests */,
+			);
+			name = CopyPasteWalletTests;
+			packageProductDependencies = (
+			);
+			productName = CopyPasteWalletTests;
+			productReference = CEEF0663300CDB4900CB21A8 /* CopyPasteWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEEF066C300CDB4900CB21A8 /* CopyPasteWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEF067D300CDB4900CB21A8 /* Build configuration list for PBXNativeTarget "CopyPasteWalletUITests" */;
+			buildPhases = (
+				CEEF0669300CDB4900CB21A8 /* Sources */,
+				CEEF066A300CDB4900CB21A8 /* Frameworks */,
+				CEEF066B300CDB4900CB21A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEF066F300CDB4900CB21A8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CEEF0670300CDB4900CB21A8 /* CopyPasteWalletUITests */,
+			);
+			name = CopyPasteWalletUITests;
+			packageProductDependencies = (
+			);
+			productName = CopyPasteWalletUITests;
+			productReference = CEEF066D300CDB4900CB21A8 /* CopyPasteWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEF064C300CDB4700CB21A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					CEEF0653300CDB4700CB21A8 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					CEEF0662300CDB4900CB21A8 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = CEEF0653300CDB4700CB21A8;
+					};
+					CEEF066C300CDB4900CB21A8 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = CEEF0653300CDB4700CB21A8;
+					};
+				};
+			};
+			buildConfigurationList = CEEF064F300CDB4700CB21A8 /* Build configuration list for PBXProject "CopyPasteWallet" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEF064B300CDB4700CB21A8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CEEF0655300CDB4700CB21A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEF0653300CDB4700CB21A8 /* CopyPasteWallet */,
+				CEEF0662300CDB4900CB21A8 /* CopyPasteWalletTests */,
+				CEEF066C300CDB4900CB21A8 /* CopyPasteWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEF0652300CDB4700CB21A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF0661300CDB4900CB21A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF066B300CDB4900CB21A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEF0650300CDB4700CB21A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF065F300CDB4900CB21A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF0669300CDB4900CB21A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEF0665300CDB4900CB21A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEF0653300CDB4700CB21A8 /* CopyPasteWallet */;
+			targetProxy = CEEF0664300CDB4900CB21A8 /* PBXContainerItemProxy */;
+		};
+		CEEF066F300CDB4900CB21A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEF0653300CDB4700CB21A8 /* CopyPasteWallet */;
+			targetProxy = CEEF066E300CDB4900CB21A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CEEF0675300CDB4900CB21A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = K2VV9JZDCB;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEEF0676300CDB4900CB21A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = K2VV9JZDCB;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CEEF0678300CDB4900CB21A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2VV9JZDCB;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dharam.Singh.CopyPasteWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CEEF0679300CDB4900CB21A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2VV9JZDCB;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dharam.Singh.CopyPasteWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CEEF067B300CDB4900CB21A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2VV9JZDCB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dharam.Singh.CopyPasteWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CopyPasteWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CopyPasteWallet";
+			};
+			name = Debug;
+		};
+		CEEF067C300CDB4900CB21A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2VV9JZDCB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dharam.Singh.CopyPasteWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CopyPasteWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CopyPasteWallet";
+			};
+			name = Release;
+		};
+		CEEF067E300CDB4900CB21A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2VV9JZDCB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dharam.Singh.CopyPasteWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CopyPasteWallet;
+			};
+			name = Debug;
+		};
+		CEEF067F300CDB4900CB21A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2VV9JZDCB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dharam.Singh.CopyPasteWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CopyPasteWallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEF064F300CDB4700CB21A8 /* Build configuration list for PBXProject "CopyPasteWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF0675300CDB4900CB21A8 /* Debug */,
+				CEEF0676300CDB4900CB21A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEF0677300CDB4900CB21A8 /* Build configuration list for PBXNativeTarget "CopyPasteWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF0678300CDB4900CB21A8 /* Debug */,
+				CEEF0679300CDB4900CB21A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEF067A300CDB4900CB21A8 /* Build configuration list for PBXNativeTarget "CopyPasteWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF067B300CDB4900CB21A8 /* Debug */,
+				CEEF067C300CDB4900CB21A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEF067D300CDB4900CB21A8 /* Build configuration list for PBXNativeTarget "CopyPasteWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF067E300CDB4900CB21A8 /* Debug */,
+				CEEF067F300CDB4900CB21A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEF064C300CDB4700CB21A8 /* Project object */;
+}
