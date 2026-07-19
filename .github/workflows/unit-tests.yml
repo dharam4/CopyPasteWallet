@@ -1,0 +1,45 @@
+name: Unit Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+permissions:
+  contents: read
+
+concurrency:
+  group: unit-tests-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  unit-tests:
+    name: macOS unit tests
+    runs-on: macos-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Run unit tests
+        run: |
+          set -o pipefail
+
+          xcodebuild test \
+            -project App/CopyPasteWallet/CopyPasteWallet.xcodeproj \
+            -scheme CopyPasteWallet \
+            -configuration Debug \
+            -destination 'platform=macOS' \
+            -derivedDataPath "${RUNNER_TEMP}/DerivedData" \
+            -only-testing:CopyPasteWalletTests \
+            CODE_SIGNING_ALLOWED=NO
