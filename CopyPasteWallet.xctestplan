@@ -1,0 +1,65 @@
+{
+  "configurations" : [
+    {
+      "id" : "43E562E3-1441-4AC4-96E7-8579F8D7E549",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CopyPasteWallet.xcodeproj",
+      "identifier" : "CEEF0653300CDB4700CB21A8",
+      "name" : "CopyPasteWallet"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CopyPasteWallet.xcodeproj",
+        "identifier" : "CEEF0662300CDB4900CB21A8",
+        "name" : "CopyPasteWalletTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Packages\/TestSupport",
+        "identifier" : "TestSupportTests",
+        "name" : "TestSupportTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Packages\/Domain",
+        "identifier" : "DomainTests",
+        "name" : "DomainTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Packages\/Presentation",
+        "identifier" : "PresentationTests",
+        "name" : "PresentationTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Packages\/DataLayer",
+        "identifier" : "DataLayerTests",
+        "name" : "DataLayerTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Packages\/Support",
+        "identifier" : "SupportTests",
+        "name" : "SupportTests"
+      }
+    }
+  ],
+  "version" : 1
+}
