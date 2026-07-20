@@ -25,51 +25,51 @@ public enum Dependency {
     }
 
     /// Resolves a dependency registered with one runtime argument.
-    public static func resolve<Service, Arg1>(
+    public static func resolve<Service>(
         _ type: Service.Type = Service.self,
-        arg1: Arg1
+        arg1: some Any
     ) -> Service {
         build(type, arguments: arg1)
     }
 
     /// Resolves a dependency registered with two runtime arguments.
-    public static func resolve<Service, Arg1, Arg2>(
+    public static func resolve<Service>(
         _ type: Service.Type = Service.self,
-        arg1: Arg1,
-        arg2: Arg2
+        arg1: some Any,
+        arg2: some Any
     ) -> Service {
         build(type, arguments: arg1, arg2)
     }
 
     /// Resolves a dependency registered with three runtime arguments.
-    public static func resolve<Service, Arg1, Arg2, Arg3>(
+    public static func resolve<Service>(
         _ type: Service.Type = Service.self,
-        arg1: Arg1,
-        arg2: Arg2,
-        arg3: Arg3
+        arg1: some Any,
+        arg2: some Any,
+        arg3: some Any
     ) -> Service {
         build(type, arguments: arg1, arg2, arg3)
     }
 
     /// Resolves a dependency registered with four runtime arguments.
-    public static func resolve<Service, Arg1, Arg2, Arg3, Arg4>(
+    public static func resolve<Service>(
         _ type: Service.Type = Service.self,
-        arg1: Arg1,
-        arg2: Arg2,
-        arg3: Arg3,
-        arg4: Arg4
+        arg1: some Any,
+        arg2: some Any,
+        arg3: some Any,
+        arg4: some Any
     ) -> Service {
         build(type, arguments: arg1, arg2, arg3, arg4)
     }
 
     /// Resolves a dependency registered with five runtime arguments.
-    public static func resolve<Service, Arg1, Arg2, Arg3, Arg4, Arg5>(
+    public static func resolve<Service>(
         _ type: Service.Type = Service.self,
-        arg1: Arg1,
-        arg2: Arg2,
-        arg3: Arg3,
-        arg4: Arg4,
-        arg5: Arg5
+        arg1: some Any,
+        arg2: some Any,
+        arg3: some Any,
+        arg4: some Any,
+        arg5: some Any
     ) -> Service {
         build(type, arguments: arg1, arg2, arg3, arg4, arg5)
     }
@@ -77,9 +77,9 @@ public enum Dependency {
     /// Resolves a dependency with one runtime argument.
     ///
     /// This overload preserves the original singular `argument` API.
-    public static func resolve<Service, Argument>(
+    public static func resolve<Service>(
         _ type: Service.Type = Service.self,
-        argument: Argument
+        argument: some Any
     ) -> Service {
         resolve(type, arg1: argument)
     }
@@ -114,13 +114,13 @@ private final class DependencyRegistry: @unchecked Sendable {
     private var factories: [ObjectIdentifier: Any] = [:]
     private let lock = NSLock()
 
-    func store<Service>(_ factory: Any, for type: Service.Type) {
+    func store(_ factory: Any, for type: (some Any).Type) {
         lock.withLock {
             factories[ObjectIdentifier(type)] = factory
         }
     }
 
-    func factory<Service>(for type: Service.Type) -> Any? {
+    func factory(for type: (some Any).Type) -> Any? {
         lock.withLock {
             factories[ObjectIdentifier(type)]
         }

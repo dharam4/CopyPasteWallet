@@ -22,4 +22,7 @@
    <FileRef
       location = "group:CopyPasteWallet.xctestplan">
    </FileRef>
+   <FileRef
+      location = "group:BuildTools">
+   </FileRef>
 </Workspace>
