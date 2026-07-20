@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "BuildTools",
             path: ".",
-            exclude: ["Package.resolved"],
+            exclude: ["Package.resolved", "README.md"],
         ),
     ],
 )

@@ -20,6 +20,9 @@
       location = "group:Packages/TestSupport">
    </FileRef>
    <FileRef
+      location = "group:CopyPasteWallet.xctestplan">
+   </FileRef>
+   <FileRef
       location = "group:BuildTools">
    </FileRef>
 </Workspace>
