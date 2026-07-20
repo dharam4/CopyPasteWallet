@@ -1,0 +1,78 @@
+name: CodeQL
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+  schedule:
+    - cron: "30 2 * * 5"
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+  packages: read
+  security-events: write
+
+concurrency:
+  group: codeql-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 45
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: actions
+            build-mode: none
+            runner: ubuntu-latest
+          - language: swift
+            build-mode: manual
+            runner: macos-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v4
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: ${{ matrix.build-mode }}
+
+      - name: Show Xcode version
+        if: matrix.language == 'swift'
+        run: xcodebuild -version
+
+      - name: Build Swift project
+        if: matrix.build-mode == 'manual'
+        run: |
+          set -o pipefail
+
+          for package in Domain Support Presentation DataLayer TestSupport; do
+            echo "Building ${package}"
+            swift build --package-path "Packages/${package}"
+          done
+
+          xcodebuild build \
+            -workspace CopyPasteWallet.xcworkspace \
+            -scheme CopyPasteWallet \
+            -configuration Debug \
+            -destination 'generic/platform=macOS' \
+            -derivedDataPath "${RUNNER_TEMP}/CodeQLDerivedData" \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Perform CodeQL analysis
+        uses: github/codeql-action/analyze@v4
+        with:
+          category: /language:${{ matrix.language }}
