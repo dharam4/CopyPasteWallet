@@ -31,12 +31,21 @@ jobs:
       - name: Show Xcode version
         run: xcodebuild -version
 
+      - name: Run package unit tests
+        run: |
+          set -o pipefail
+
+          for package in Domain Support Presentation DataLayer TestSupport; do
+            echo "Testing ${package}"
+            swift test --package-path "Packages/${package}"
+          done
+
       - name: Run unit tests
         run: |
           set -o pipefail
 
           xcodebuild test \
-            -project App/CopyPasteWallet/CopyPasteWallet.xcodeproj \
+            -workspace CopyPasteWallet.xcworkspace \
             -scheme CopyPasteWallet \
             -configuration Debug \
             -destination 'platform=macOS' \

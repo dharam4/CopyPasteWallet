@@ -4,4 +4,19 @@
    <FileRef
       location = "container:App/CopyPasteWallet/CopyPasteWallet.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Packages/DataLayer">
+   </FileRef>
+   <FileRef
+      location = "group:Packages/Domain">
+   </FileRef>
+   <FileRef
+      location = "group:Packages/Presentation">
+   </FileRef>
+   <FileRef
+      location = "group:Packages/Support">
+   </FileRef>
+   <FileRef
+      location = "group:Packages/TestSupport">
+   </FileRef>
 </Workspace>
